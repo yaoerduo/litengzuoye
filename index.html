@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <!--让视口宽度为设备宽度,不允许用户缩放 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!--不自动识别电话号码和邮编 -->
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="email=no"/>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body ng-app='app' ng-controller='ctrl'>
+    <div class="countainer">
+        <div class="header">
+            <i class="fa-angle-left"></i>
+            <p>订单支付</p>
+            <i class="fa-angle-right"></i>
+        </div>
+        <div class="main">
+            <div class="top">
+                <h3>路飞    138******554131</h3>
+                <h4><i></i><p>北京市海淀区知春路北京市海淀区知春路北京市海淀区知春路</p><i></i></h4>
+            </div>
+            <div class="list">
+                <h3><img src="img/img1.png">恒指然舰旗店</h3>
+                <dl>
+                    <dt><img src="img/img2.png" alt=""></dt>
+                    <dd>
+                        <h4>微微微焦水果大豆绝焦水果大豆拒绝大都为棒棒糖....</h4>
+                        <h4>
+                            ￥<p ng-model='pri' style="font-size: 14px; color: red">988.00</p>
+                            <p>
+                                <span ng-click="count1()">-</span>
+                                <span>{{count}}</span>
+                                <span ng-click="count2()">+</span>
+                            </p>
+                        </h4>
+                    </dd>
+                </dl>
+                <div class="price">
+                        <p><span>商品总金额</span><span></span>￥<i>{{count*pri}}.00</i></p>
+                        <p><span>运费</span><span></span>￥<i ng-model='yun'>10.00</i></p>
+                        <p><span>总费（含运费）</span><span></span>￥<i style="font-size: 16px; color: red">{{count*pri+yun}}.00</i></p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="money">
+                    <span>余额支付￥{{count*pri+yun}}.00</span>
+                    <div class="wrap pt20">
+                        <label class="toggle-radio toggle-radio-orange">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="icon"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="money">
+                    <span>奖金支付￥{{count*pri+yun}}.00</span>
+                    <div class="wrap pt20">
+                        <label class="toggle-radio toggle-radio-orange">
+                            <input type="checkbox">
+
+                            <div class="track">
+                                <div class="icon"></div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="money">
+                    <span>其他方式支付</span>
+                    <span></span>
+                    <span></span>
+                    <i class="">></i>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+            <div class="left">
+                <p>总计￥{{count*pri+yun}}.00</p>
+                <p>（含运费）</p>
+            </div>
+          
+            <div class="right">
+                <p>提交订单</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/angular.js"></script>
+    <script>
+        var app = angular.module('app',[])
+        app.controller('ctrl',function($scope){
+            $scope.count = 1;
+            $scope.pri = 988.00;
+            $scope.yun = 10.00;
+            $scope.count1=function(){
+               $scope.count--
+               if($scope.count<0){
+                $scope.count=0
+               }
+            }
+            $scope.count2=function(){
+               $scope.count++
+            }
+        })
+    </script>
+</body>
+</html>

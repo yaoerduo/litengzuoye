@@ -1,0 +1,135 @@
+html {
+  font-size: 625%; }
+
+html, body, .countainer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  overflow: hidden;
+  -webkit-flex-direction: column;
+  background: #EEEEEE; }
+  html .header, body .header, .countainer .header {
+    height: 0.44rem;
+    font-size: 0.14rem;
+    line-height: 0.44rem;
+    display: -webkit-flex;
+    border-bottom: 1px solid #ccc;
+    background: #fff; }
+    html .header i, body .header i, .countainer .header i {
+      flex: 1;
+      text-align: center; }
+    html .header p, body .header p, .countainer .header p {
+      flex: 3;
+      text-align: center; }
+  html .main, body .main, .countainer .main {
+    -webkit-flex: 1;
+    overflow-y: scroll; }
+    html .main .top, body .main .top, .countainer .main .top {
+      height: 0.86rem;
+      border-bottom: 2px solid red;
+      padding-top: 0.1rem;
+      box-sizing: border-box;
+      background: #fff;
+      margin-bottom: 0.12rem; }
+      html .main .top h3, body .main .top h3, .countainer .main .top h3 {
+        height: 0.34rem;
+        font-size: 0.14rem;
+        font-weight: normal;
+        text-indent: 0.4rem; }
+      html .main .top h4, body .main .top h4, .countainer .main .top h4 {
+        height: 0.34rem;
+        font-size: 0.14rem;
+        display: -webkit-flex;
+        font-weight: normal; }
+        html .main .top h4 i, body .main .top h4 i, .countainer .main .top h4 i {
+          flex: 1; }
+        html .main .top h4 p, body .main .top h4 p, .countainer .main .top h4 p {
+          flex: 7; }
+    html .main .list, body .main .list, .countainer .main .list {
+      background: #fff;
+      padding: 0.1rem;
+      margin-bottom: 0.12rem; }
+      html .main .list h3, body .main .list h3, .countainer .main .list h3 {
+        height: 0.44rem;
+        font-size: 0.14rem;
+        font-weight: normal;
+        text-indent: 0.28rem;
+        display: -webkit-flex;
+        line-height: 0.44rem; }
+        html .main .list h3 img, body .main .list h3 img, .countainer .main .list h3 img {
+          width: 0.22rem;
+          height: 0.2rem;
+          margin-top: 0.08rem; }
+      html .main .list dl, body .main .list dl, .countainer .main .list dl {
+        height: 1rem;
+        display: -webkit-flex; }
+        html .main .list dl dt, body .main .list dl dt, .countainer .main .list dl dt {
+          flex: 1;
+          display: -webkit-flex; }
+          html .main .list dl dt img, body .main .list dl dt img, .countainer .main .list dl dt img {
+            width: 100%; }
+        html .main .list dl dd, body .main .list dl dd, .countainer .main .list dl dd {
+          flex: 2;
+          margin-left: 0.06rem; }
+          html .main .list dl dd h4, body .main .list dl dd h4, .countainer .main .list dl dd h4 {
+            font-size: 0.14rem;
+            font-weight: normal;
+            display: -webkit-flex;
+            margin-top: 0.1rem; }
+            html .main .list dl dd h4 p, body .main .list dl dd h4 p, .countainer .main .list dl dd h4 p {
+              flex: 1;
+              display: -webkit-flex; }
+              html .main .list dl dd h4 p span, body .main .list dl dd h4 p span, .countainer .main .list dl dd h4 p span {
+                display: block;
+                width: 0.28rem;
+                height: 0.28rem;
+                border: 1px solid #ccc;
+                text-align: center;
+                line-height: 0.28rem; }
+      html .main .list .price p, body .main .list .price p, .countainer .main .list .price p {
+        display: -webkit-flex;
+        font-size: 0.12rem;
+        height: 0.26rem;
+        line-height: 0.26rem; }
+        html .main .list .price p span, body .main .list .price p span, .countainer .main .list .price p span {
+          flex: 2; }
+        html .main .list .price p i, body .main .list .price p i, .countainer .main .list .price p i {
+          flex: 1;
+          font-style: normal; }
+    html .main .bottom, body .main .bottom, .countainer .main .bottom {
+      padding: 0 0.1rem;
+      background: #fff; }
+      html .main .bottom .money, body .main .bottom .money, .countainer .main .bottom .money {
+        height: 0.34rem;
+        background: #fff;
+        display: -webkit-flex;
+        font-size: 0.12rem;
+        line-height: 0.34rem;
+        border-bottom: 1px solid #ccc; }
+        html .main .bottom .money span, body .main .bottom .money span, .countainer .main .bottom .money span {
+          flex: 3; }
+        html .main .bottom .money .wrap, body .main .bottom .money .wrap, .countainer .main .bottom .money .wrap {
+          flex: 1;
+          margin-top: 3px; }
+        html .main .bottom .money i, body .main .bottom .money i, .countainer .main .bottom .money i {
+          flex: 1; }
+  html .footer, body .footer, .countainer .footer {
+    background: #fff;
+    display: -webkit-flex; }
+    html .footer .left, body .footer .left, .countainer .footer .left {
+      flex: 3; }
+      html .footer .left p, body .footer .left p, .countainer .footer .left p {
+        height: 0.34rem;
+        font-size: 0.14rem;
+        text-align: center;
+        line-height: 0.34rem; }
+    html .footer .right, body .footer .right, .countainer .footer .right {
+      flex: 2; }
+      html .footer .right p, body .footer .right p, .countainer .footer .right p {
+        font-size: 0.16rem;
+        text-align: center;
+        line-height: 0.68rem;
+        color: #fff;
+        background: #FC4141; }
+
+/*# sourceMappingURL=index.css.map */
